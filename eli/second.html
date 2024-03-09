@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+</head>
+<body>
+   
+    <img id="og" src="pug1.jpg" alt="original" width="350">
+
+    <button onclick="change()"><br>Change Image </button>
+    <button onclick="revert()"><br>Revert Image</button>
+
+    <script>
+        
+        function revert() {
+            document.getElementById("og").src = "pug1.jpg";
+        }
+
+        
+        function change() {
+            document.getElementById("og").src = "pug2.jpg";
+        }
+    </script>
+
+</body>
+</html>
